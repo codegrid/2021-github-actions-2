@@ -1,0 +1,17 @@
+name: Node.jsなどのバージョンの確認
+on:
+  push:
+jobs:
+  check-versions:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Node.jsのバージョンを確認
+        run: node -v
+      - name: Npmのバージョンを確認
+        run: npm -v
+      - name: Yarnのバージョンを確認
+        run: yarn -v
+      - name: 現在のディレクトリを確認
+        run: pwd
+      - name: ディレクトリの中身を確認
+        run: ls -l
