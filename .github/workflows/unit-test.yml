@@ -1,0 +1,17 @@
+name: 単体テストの実行
+on:
+  push:
+    branches:
+      - 'topic/**'
+      - 'fix/**'
+jobs:
+  unit-test:
+    runs-on: ubuntu-latest
+    name: 単体テスト
+    steps:
+      - name: チェックアウト
+        uses: actions/checkout@v2
+      - name: パッケージのインストール
+        run: npm ci
+      - name: 単体テストの実行
+        run: npm run test

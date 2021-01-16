@@ -1,0 +1,23 @@
+{
+  "name": "2021-github-actions-2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codegrid/2021-github-actions-2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/codegrid/2021-github-actions-2/issues"
+  },
+  "homepage": "https://github.com/codegrid/2021-github-actions-2#readme",
+  "devDependencies": {
+    "jest": "^26.6.3"
+  }
+}
